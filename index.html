@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>IG Photofeed</title>
+</head>
+<body>
+     <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28"
+            height="28"viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            Instagram
+          
+          </button>
+<div class="btn-group">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#create-post">
+        Create a new post
+      </button>
+    <button type="button" class="btn btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+          </svg>
+    </button>
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Profile</a></li>
+      <li><a class="dropdown-item" href="#">Accessibility</a></li>
+      <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+    </ul>
+  </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="create-post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Caption:</p>
+                <div>
+                    <div calss="form-floating">
+                </div>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Add the captions of your post here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Add the captions of your post here</label>
+              </div>
+              <button type="button" class="btn btn-light btn btn-outline-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"/>
+                  </svg>
+              </button>
+              <button type="button" class="btn btn-light btn btn-outline-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="d-flex mt-3 justify-content-center">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+         <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-gridview-tab" data-bs-toggle="pill" data-bs-target="#gridview" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+              <path d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+            </svg>
+          </button>
+         </li>
+         <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-feed-tab" data-bs-toggle="pill" data-bs-target="#feed" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"/>
+            </svg>
+          </button>
+         </li>
+        </ul>
+    </div>
+
+ 
+
+
+
+
+
+
+<div class="tab-content" id="pills-tabContent">
+   
+    <div class="tab-pane fade show active" id="gridview" role="tabpanel" aria-labelledby="pills-gridview-tab">
+      <div class="row mx-auto mt-1">
+         <div class="col-4 d-flex justify-content-center">
+          <img src="https://picsum.photos/820"  alt="...">
+         </div>
+         <div class="col-4 d-flex justify-content-center">
+          <img src="https://picsum.photos/840"  alt="...">
+         </div>
+         <div class="col-4 d-flex justify-content-center">
+          <img src="https://picsum.photos/820" alt="...">
+         </div>
+      </div>
+      <div class="row mx-auto mt-2">
+        <div class="col-4 d-flex justify-content-center">
+         <img src="https://picsum.photos/820"  alt="...">
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+         <img src="https://picsum.photos/840"  alt="...">
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+         <img src="https://picsum.photos/840" alt="...">
+        </div>
+     </div>
+     <div class="row mx-auto mt-2">
+      <div class="col-4 d-flex justify-content-center">
+       <img src="https://picsum.photos/820"  alt="...">
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+       <img src="https://picsum.photos/840"  alt="...">
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+       <img src="https://picsum.photos/820" alt="...">
+      </div>
+   </div>
+    </div>
+
+
+    
+    <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="pills-feed-tab">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 d-flex justify-content-center">
+            <div class="card">
+                <div class="card-header bg-white d-flex justify-content-between">
+                  <span><h5>My Crazy Dog Spark!</h5></span><span>08/26</span>
+                </div>
+                <img src="https://picsum.photos/300" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>204 Likes</strong></p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-4"></div>
+      </div> 
+      <div class="row mt-3">
+        <div class="col-4"></div>
+        <div class="col-4 d-flex justify-content-center">
+            <div class="card">
+                <div class="card-header bg-white d-flex justify-content-between">
+                    <span><h5>The Greatness of Crotia</h5></span><span>04/09</span>
+                </div>
+                <img src="https://picsum.photos/300" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>26985 Likes</strong></p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-4"></div>
+      </div> 
+      <div class="row mt-4">
+        <div class="col-4"></div>
+        <div class="col-4 d-flex justify-content-center">
+            <div class="card">
+                <div class="card-header bg-white d-flex justify-content-between">
+                    <span><h5>Amazing GOAL by Cristiano!</h5></span><span>06/10</span>
+                </div>
+                <img src="https://picsum.photos/300" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>204 Likes</strong></p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-4"></div>
+      </div>    
+    </div>
+</div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
